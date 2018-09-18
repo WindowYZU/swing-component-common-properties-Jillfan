@@ -6,7 +6,10 @@
 package lendle.courses.window_programming.componentproperties;
 
 import java.awt.Color;
+import javafx.scene.layout.Border;
 import javax.swing.BorderFactory;
+import javax.swing.border.MatteBorder;
+import javax.swing.border.TitledBorder;
 
 /**
  *
@@ -137,36 +140,50 @@ public class BorderSample extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        javax.swing.border.Border border = BorderFactory.createLineBorder(Color.BLUE);
+        jButton1.setBorder(border);        
         //實作 line border
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        javax.swing.border.Border border = BorderFactory.createRaisedBevelBorder();
+        jButton1.setBorder(border);
         //實作 RaisedBevel border
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        javax.swing.border.Border border = BorderFactory.createLoweredBevelBorder();
+        jButton1.setBorder(border);
         //實作 LoweredBevel border
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        javax.swing.border.Border border = BorderFactory.createDashedBorder(Color.BLACK);
+        jButton1.setBorder(border);
         //實作 Dashed border
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        TitledBorder border = BorderFactory.createTitledBorder("123");
+        jButton1.setBorder(border);
         //實作 title border
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        MatteBorder border = BorderFactory.createMatteBorder(0,0,150,150,Color.yellow);
+        jButton1.setBorder(border);
         //實作 matte border
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
+        javax.swing.border.Border border = BorderFactory.createEmptyBorder();
+        jButton1.setBorder(border);
         //實作 empty border
     }//GEN-LAST:event_jButton8ActionPerformed
 
